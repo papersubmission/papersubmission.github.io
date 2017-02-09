@@ -9,7 +9,7 @@
     <meta name="description" content="How do Software Developers Identify Design Problems? A Qualitative Study">
     <meta name="author" content="ICPCSUBMISSION">
 
-    <title>ICPC - SUBMISSION: How do Software Developers Identify Design Problems? A Quali Study</title>
+    <title>How Smelly is the Refactored Code? A Study of 50 Projects</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -38,13 +38,13 @@
             background: #ffffff;
             padding: 0px;
         }
-        
+
         .col-md-6 {
             background: #ffffff;
             border: none;
             padding-bottom: 0px;
         }
-        
+
         body {
             padding-top: 70px;
             position: relative;
@@ -81,17 +81,18 @@
     <div class="container">
 
         <div class="page-header" id="title">
-            <h1>How do Software Developers Identify Design Problems?<br/>
-            <small>A Qualitative Study</small></h1>
+            <h1>How Smelly is the Refactored Code?<br/>
+            <small> A Study of 50 Projects </small></h1>
         </div>
 
-        This web page presents the supplementary material of the paper <i>How do Software Developers Identify Design Problems? A Qualitative Study</i>. <br>
+        This web page presents the supplementary material of the paper <i>How Smelly is the Refactored Code? A Study of 50 Projects </i>. <br>
         Following sections present the complementary information regarding the paper:
 
         <h3 class="page-header" id="abstract">Abstract</h3>
 
         <p class="text-justify">
-            Software systems have been discontinued or restructure due to the presence of design problems. However, identifying design problems is a challenging task. For instance, developers have to locate and analyze several elements to identify a single design problem. In order to help the developers with this task, we investigate how they perform it nowadays. We conducted a study in which we observed developers identifying design problems in systems that they have knowledge of the implementation and in systems they did not have knowledge. Our results indicate that developers face similar issues in both scenarios. They also combine different strategies to identify design problems. One of the strategies regards of the use of code smells. When they used the code smells, they identified design problems that the developers that have knowledge of the systems could not identify. Our results are relevant because they shed lights on the way the developers identify design problems. Thus, other studies can focus on improving the identification based on our findings.
+          Refactoring is a common practice employed by practitioners along software evolution. Smells can be used as indicators of the need for refactoring. However, the decision on when to refactor is not so cut-and-dried. Software developers are expected to refactor the source code as soon as it smells, i.e. when there is an initial sign of structural degradation. On the other hand, developers might decide to postpone refactoring until when code elements are highly degraded. In other words, different stages of degradation may lead developers to refactor. Unfortunately, there is not much understanding of how often refactorings are applied on these stages of degradation. In our study, we analyzed the frequency of refactorings on modules representing different levels of structural degradation. Different from other studies, we have empirically investigated 50 projects taking into account different stages of degradation. Our results indicate that developers tend to apply refactoring in elements with different degradation stages. Nevertheless, refactorings were most frequently applied when code manifested the worst stage of degradation.
+
             </p>
 
     </div>
@@ -101,16 +102,16 @@
 
         <h3 class="page-header" id="scenarios">Studied Scenarios and Participants</h3>
         We conducted a qualitative study to observe how developers identify design problems in the source code. In order to conduct the study, we observed developers in two scenarios:
-        
-        
-        <h4><u>Scenario 1: Developers that are familiar with the analyzed systems</u></h4>
-        
-        <p class="text-justify"> 
-            The first scenario comprises developers allocated to identify design problems in systems with which they are familiar, i.e., systems that they implemented. In order to select developers
-            for this scenario, we searched for software companies that could provide us with: (i) developers, and (ii) systems where identification of design problems was currentlyseen as critical.
-            We selected two software companies, in which provided us five software systems. Table I summarizes the characterization of the software companies.</p>
 
-        <p>
+
+        <h4><u>Scenario 1: Developers that are familiar with the analyzed systems</u></h4>
+
+        <p class="text-justify">
+            <!-- The first scenario comprises developers allocated to identify design problems in systems with which they are familiar, i.e., systems that they implemented. In order to select developers
+            for this scenario, we searched for software companies that could provide us with: (i) developers, and (ii) systems where identification of design problems was currentlyseen as critical.
+            We selected two software companies, in which provided us five software systems. Table I summarizes the characterization of the software companies.</p> -->
+
+        <!-- <p>
         <table class="tg">
             <caption>
                 Table I. Characterization of the Software Companies
@@ -160,9 +161,9 @@
         <br>
         <p class="text-justify">
             The two selected companies provided us the following five systems:
-        </p>
+        </p> -->
 
-        <style type="text/css">
+        <!-- /*<style type="text/css">
         .tg  {border-collapse:collapse;border-spacing:0;}
         .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
         .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
@@ -204,16 +205,16 @@
                 <td class="tg-j4kc">S5</td>
                 <td class="tg-bsv2">It is a system developed for standardizing budget in the same state that the company belongs. Both systems are considered critical by the state's government since they handle with with the state budget control.</td>
             </tr>
-        </table>
+        </table>*/ -->
 
 
         <p>
         <h4><u>Scenario 2: Developers that are unfamiliar with the analyzed systems</u></h4>
 
-        <p class="text-justify">
-            The second scenario comprises developers assigned to identify design problems in systems with which they are unfamiliar, i.e., systems that they did not implement. 
-            In order to select developers for this scenario, we recruited a set of developers, and we asked them to answer a questionnaire. The goal was to determine which of 
-            them were eligible for the study. The questionnaire covers information to characterize the developers about their education level and knowledge of Java programming 
+        <!-- <p class="text-justify">
+            The second scenario comprises developers assigned to identify design problems in systems with which they are unfamiliar, i.e., systems that they did not implement.
+            In order to select developers for this scenario, we recruited a set of developers, and we asked them to answer a questionnaire. The goal was to determine which of
+            them were eligible for the study. The questionnaire covers information to characterize the developers about their education level and knowledge of Java programming
             and code smells. In order to select a developer for the study, he would need to meet some requirements.Thus, we analyzed their answers based on the following requirements:
 
             <ol>
@@ -240,7 +241,7 @@
             <caption>
             Table III. Knowledge classification
             </caption>
-                <tr> 
+                <tr>
                     <th class="tg-be9c">Classification</th>
                     <th class="tg-be9c">Description</th>
                 </tr>
@@ -274,24 +275,25 @@
         <p class="text-justify">
             We selected two systems from the <a href="http://oodt.apache.org/" target="_blank">Apache OODT</a> project (Push Pull and Workflow Manager), and we asked developers of Group 2 to identify design problems in these systems. We selected these systems because they have a well-defined set of design problems identified by developers who actually implemented the systems. We gave them a document containing: (i) a brief description of Push Pull (S6) and Workflow Manager (S7), and (ii) a very high level description of their design blueprint. We gave them these documents because when they have to maintain unfamiliar systems, they need to have some minimal information about the systems to be maintained. We used the same document provided in the OODT project. Document with the description of both systems can be downloaded at <a href="download/oodtdoc.zip">here</a>. A full description of the Push Pull and Working Manager as well as other OODT systems can be downloaded at <a href="http://oodt.apache.org/site_docs/oodt/index.html" target="_blank">OODT website</a>.</br>
         </p>
-    </div>
+     -->
+</div>
 
-    
 
     <div class="container">
 
         <h3 class="page-header" id="dp">Design Problems and Code Smells</h3>
 
         <p class="text-justify>">
-            We conducted a qualitative study to observe how developers identify design problems in the source code. We provided developers with an initial list of code smells affecting the systems. The developers had the freedom to use or not the initial list of code smells. Thus, we could investigate if developers rely on code smells as a dominant strategy to identify design problems and to what extent they can identify design problem using code smells. Following we present the design problems and the code smells used in our study.
+            Put text
+
         </p>
 
         <h4><u>Design Problems</u></h4>
 
         <p class="text-justify">
-            A design problem is a part of the software design (a design fragment) that negatively impacts one or more quality attributes, such as comprehensibility, maintainability and performance <a href="#bar">(Bar, 1998)</a>;<a href="#ciupke">Ciupke, 1999</a>;<a href="suryanarayana">Suryanarayana 2014</a>;<a href="#trifu">Trifu, 2007)</a>. In order to support developers during the identification of design problems, we provide them a guide characterizing different types of design problems at the beginning of the task (Activity 2 - Problems identification). This guide contains a brief description of the design problems used in our study. We highlight that we let clear to developers that they were allowed to identify other types of design problems. Following we present the design problems used in the study, as well as the description used to create the guide.
+            Put Text
 
-        </p>
+        <!-- </p>
         <ul>
             <li><strong>Ambiguous Interface:</strong> Interface of a design component that offers only a general, ambiguous entry-point that provides non-cohesive services, thereby complicating the clients' logic.</li>
 
@@ -322,7 +324,7 @@
             <li><strong>Blob Class:</strong> Long and complex class that centralizes the intelligence of the system.</li>
 
             <li><strong>Class Data Should Be Private:</strong> A class exposing its fields, violating the principle of data hiding.</li>
-            
+
             <li><strong>Complex Class:</strong> A class having at least one method having a high cyclomatic complexity.</li>
 
             <li><strong>Data Class:</strong> A class has this code smell when it has only fields, getting and setting methods for the fields, and nothing else. The aim is to hold data and, consequently, be manipulated by other classes.</li>
@@ -358,9 +360,9 @@
 
         <p class="text-justify">
             Following we present the main artifacts used in the study. For privacy reasons, we do not provide examples of the videos recorded in the environment, neither the audio transcription
-        </p>
+        </p> -->
 
-        <table class="tg">
+        <!-- <table class="tg">
             <caption>
                 Table IV. Link to donwload the artifacts used in the study
             </caption>
@@ -385,8 +387,8 @@
             <tr>
                 <td class="tg-yzt1"><a href="download/paper.pdf" target="_blank">Submitted Paper</a></td>
             </tr>
-            
-        </table>
+
+        </table> -->
 
     </div>
 
@@ -395,13 +397,14 @@
 
 		<p>
 		<ol>
-            <li id="trifu">A. Trifu and U. Reupke, <i>Towards automated restructuring of object oriented systems</i> in Proceedings of the 11th European Conference on Software Maintenance and Reengineering, 2007.</li>
-            <li id="bar">H. Bär and O. Ciupke, <i>Exploiting design heuristics for automatic problem detection</i> in Workshop Ion on Object-Oriented Technology, 1998.</li>
+      Some references...
+            <!-- <li id="trifu">A. Trifu and U. Reupke, <i>Towards automated restructuring of object oriented systems</i> in Proceedings of the 11th European Conference on Software Maintenance and Reengineering, 2007.</li>
+            <li id="bar">H. Bär and O. Ciupke, <i>Exploiting design heuristics for automatic problem detection</i> in Workshop Ion on Object-Oriented Technology, 1998.</li>
             <li id="twitter">Twitter. <i>Working at Twitter"</i>. Available at <a href="https://about.twitter.com/careers" target="_blank">https://about.twitter.com/careers</a></li>
             <li id="yahoo">Yahoo!. <i>Explore Career Opportunities"</i>. Available at <a href="https://careers.yahoo.com/us/buildyourcareer" target="_blank">https://careers.yahoo.com/us/buildyourcareer</a></li>
             <li id="fowler">M. Fowler. <i>Refactoring: Improving the Design of Existing Code.</i> Addison-Wesley, Boston, MA, USA, 1999.</li>
-			<li id="suryanarayana">G. Suryanarayana, G. Samarthyam, and T. Sharma. <i>Refactoring for Software Design Smells: Managing Technical Debt</i>. Morgan Kaufmann, 2014.</li>
-		
+			<li id="suryanarayana">G. Suryanarayana, G. Samarthyam, and T. Sharma. <i>Refactoring for Software Design Smells: Managing Technical Debt</i>. Morgan Kaufmann, 2014.</li> -->
+
     </div>
 
 
